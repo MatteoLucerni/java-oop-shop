@@ -10,6 +10,7 @@ public class Main {
 		System.out.println(p1.toString());
 		
 		System.out.println("----------------------------------------------");
-		System.out.println(p1.toOttoCifre(543));
+		System.out.println("Codice originale: " + p1.getCodice());
+		System.out.println("Codice a otto cifre: " + p1.codiceToOttoCifre());
 	}
 }
