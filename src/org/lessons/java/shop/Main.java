@@ -5,6 +5,9 @@ public class Main {
 		Prodotto p1 = new Prodotto("kinder", "merendina", 2.f, 10);
 		System.out.println(p1.toString());
 		
+		System.out.println("----------------------------------------------");
+		System.out.println("Description: " + p1.getDescrizione());
+		
 		p1.setPrezzo(3.f);
 		System.out.println("----------------------------------------------");
 		System.out.println(p1.toString());
