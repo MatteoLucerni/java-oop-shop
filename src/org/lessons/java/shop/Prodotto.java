@@ -24,7 +24,7 @@ public class Prodotto {
 	
 	private void setCodice() {
 		Random rnd = new Random();
-		this.codice = rnd.nextInt();
+		this.codice = rnd.nextInt(0,Integer.MAX_VALUE);
 	}
 	
 	public String getNome() {
@@ -67,6 +67,14 @@ public class Prodotto {
 	
 	public String nomeEsteso() {
 		return this.codice + "-" + this.nome;
+	}
+	
+	public String toOttoCifre(int numero) {
+		String numberToString = Integer.toString(numero);
+		while(numberToString.length() < 8) {
+			numberToString = '0' + numberToString;
+		}
+		return numberToString;
 	}
 	
 	public String toString() {
